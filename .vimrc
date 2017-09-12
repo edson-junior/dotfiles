@@ -129,4 +129,3 @@ map <C-n> :NERDTreeToggle<CR>
 
 " Move line/selection up and down
 let g:move_key_modifier = 'C'
-
