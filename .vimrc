@@ -1,15 +1,17 @@
-" Starts Vundle
-so ~/.vim/plugins.vim
+" General configs ----------------------------------------
+so ~/.vim/plugins.vim                     " run plugins
 
-"*****************************************************************************
-"" Basic Setup
-"*****************************************************************************"
+syntax enable
 
-filetype on
-filetype plugin on
-filetype indent on
+colorscheme atom-dark-256
 
-"" Encoding
+set backspace=indent,eol,start            " make backspace work normally
+set number                                " show line numbers
+set ruler
+set visualbell                            " remove annoying vim bell/beeping
+set mouse=a                               " enable scrolling
+
+" File Encoding ----------------------------------------
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8
@@ -17,115 +19,59 @@ set bomb
 set binary
 set ttyfast
 
-"" Fix backspace indent
-set backspace=indent,eol,start
-
-"" Tabs. May be overriten by autocmd rules
+" Tabs related settings ----------------------------------------
 set linebreak
 set showbreak=+++
 set textwidth=100
 set showmatch
-set visualbell
 set autoindent
 set smartindent
 set smarttab
 set undolevels=1000
-set mouse=a
 set tabstop=2
 set softtabstop=0
 set shiftwidth=2
 set expandtab
 
-"" Map leader to ,
-let mapleader=','
+" Visual Settings ----------------------------------------
+set mousemodel=popup
+set t_Co=256
+set guioptions=egmrti
 
-"" Enable hidden buffers
-set hidden
-
-"" Searching
+" Search ----------------------------------------
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
 
-"" Directories for swp files
-set nobackup
-set noswapfile
+" Mappings ----------------------------------------
+" !!! the leader key is always comma => ','
+let mapleader=','
 
-set fileformats=unix,dos,mac
+" quickly open my vimrc
+nmap <Leader>ev :tabedit ~/work/dotfiles/.vimrc <cr>
 
-if exists('$SHELL')
-    set shell=$SHELL
-else
-    set shell=/bin/sh
-endif
+" quickly remove highliting after searching
+nmap <Leader><space> :nohlsearch<cr>
 
-" session management
-let g:session_directory = "~/.vim/session"
-let g:session_autoload = "no"
-let g:session_autosave = "no"
-let g:session_command_aliases = 1
+" toggle nerdtree on Control + n
+nmap <C-n> :NERDTreeToggle <cr>
 
-"*****************************************************************************
-"" Visual Settings
-"*****************************************************************************
-syntax on
-set ruler
-set number
-
-let no_buffers_menu=1
-if !exists('g:not_finish_vimplug')
-  colorscheme atom-dark-256
-endif
-
-set mousemodel=popup
-set t_Co=256
-set guioptions=egmrti
-set gfn=Monospace\ 10
-
-if has("gui_running")
-  if has("gui_mac") || has("gui_macvim")
-    set guifont=Menlo:h12
-    set transparency=7
-  endif
-else
-  let g:CSApprox_loaded = 1
-
-  " IndentLine
-  let g:indentLine_enabled = 1
-  let g:indentLine_concealcursor = 0
-  let g:indentLine_char = '┆'
-  let g:indentLine_faster = 1
+" Commands ----------------------------------------
+" always source vimrc on save
+augroup autosourcing
+	autocmd!
+	autocmd BufWritePost .vimrc source %
+augroup END
 
 
-  if $COLORTERM == 'gnome-terminal'
-    set term=gnome-256color
-  else
-    if $TERM == 'xterm'
-      set term=xterm-256color
-    endif
-  endif
-endif
+" Plugins ---------------------------------------
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
-if &term =~ '256color'
-  set t_ut=
-endif
+" show hidden files in nerdtree
+let NERDTreeShowHidden=1
 
-"" Disable the blinking cursor.
-set gcr=a:blinkon0
-set scrolloff=3
-
-"" Status bar
-set laststatus=2
-
-
-"*****************************************************************************
-"" Mappings
-"*****************************************************************************
-
-"Toggle Nerdtree
-
-map <C-n> :NERDTreeToggle<CR>
-
-" Move line/selection up and down
-let g:move_key_modifier = 'C'
+" CtrlP configs
+let g:ctrlp_custom_ignore = 'node_modules\DS_Store\git'
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
