@@ -1,21 +1,13 @@
-"" Some of this code was borrowed from http://vim-bootstrap.com/
-"" It's an awesome resource regarding config, but had to many bells and whistles and I
-"" prefer to use the very basic stuff from vim
+" Starts Vundle
+so ~/.vim/plugins.vim
 
 "*****************************************************************************
 "" Basic Setup
 "*****************************************************************************"
-"" General Settings
-set linebreak
-set showbreak=+++
-set textwidth=100
-set showmatch
-set visualbell
-set autoindent
-set smartindent
-set smarttab
-set undolevels=1000
-set mouse=a
+
+filetype on
+filetype plugin on
+filetype indent on
 
 "" Encoding
 set encoding=utf-8
@@ -29,6 +21,16 @@ set ttyfast
 set backspace=indent,eol,start
 
 "" Tabs. May be overriten by autocmd rules
+set linebreak
+set showbreak=+++
+set textwidth=100
+set showmatch
+set visualbell
+set autoindent
+set smartindent
+set smarttab
+set undolevels=1000
+set mouse=a
 set tabstop=2
 set softtabstop=0
 set shiftwidth=2
@@ -73,7 +75,7 @@ set number
 
 let no_buffers_menu=1
 if !exists('g:not_finish_vimplug')
-  colorscheme onedark
+  colorscheme atom-dark-256
 endif
 
 set mousemodel=popup
@@ -103,7 +105,6 @@ else
       set term=xterm-256color
     endif
   endif
-
 endif
 
 if &term =~ '256color'
@@ -116,4 +117,16 @@ set scrolloff=3
 
 "" Status bar
 set laststatus=2
+
+
+"*****************************************************************************
+"" Mappings
+"*****************************************************************************
+
+"Toggle Nerdtree
+
+map <C-n> :NERDTreeToggle<CR>
+
+" Move line/selection up and down
+let g:move_key_modifier = 'C'
 
