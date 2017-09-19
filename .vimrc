@@ -58,61 +58,70 @@ set foldenable " Enable folding
 set foldcolumn=0 " Column to show folds
 set foldlevel=99 " Close all folds by default
 set foldmethod=syntax " Syntax are used to specify folds
-set foldminlines=0 " Allow folding single lines
-set foldnestmax=5 " Set max fold nesting level
+set foldminlines=0 " allow folding single lines
+set foldnestmax=5 " set max fold nesting level
 
 
-" Visual Settings ----------------------------------------
+" visual settings ----------------------------------------
 set mousemodel=popup
-set t_Co=256
+set t_co=256
 set guioptions=egmrti
 
 
-" Search ----------------------------------------
+" search ----------------------------------------
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
 
 
-" Mappings ----------------------------------------
+" mappings ----------------------------------------
 " !!! the leader key is always comma => ','
 let mapleader=','
 
 " quickly open my vimrc
-nmap <Leader>ev :tabedit ~/work/dotfiles/.vimrc <cr>
+nmap <leader>ev :tabedit ~/work/dotfiles/.vimrc <cr>
+
+" quickly open plugin list
+nmap <leader>ep :tabedit ~/work/dotfiles/.vim/plugins.vim <cr>
 
 " quickly remove highliting after searching
-nmap <Leader><space> :nohlsearch<cr>
+nmap <leader><space> :nohlsearch<cr>
 
-" toggle nerdtree on Control + n
+" toggle nerdtree on control + n
 nmap <C-n> :NERDTreeToggle <cr>
 
 " trigger emmet on ctrl+e, using <tab> ain't a great idea after all
 let g:user_emmet_expandabbr_key = '<C-e>'
 
-" Better split switching (Ctrl-j, Ctrl-k, Ctrl-h, Ctrl-l)
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-H> <C-W>h
-map <C-L> <C-W>l
+" better split switching (ctrl-j, ctrl-k, ctrl-h, ctrl-l)
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-h> <C-w>h
+map <C-l> <C-w>l
 
- " Fix page up and down {{{
-map <PageUp> <C-U>
-map <PageDown> <C-D>
-imap <PageUp> <C-O><C-U>
-imap <PageDown> <C-O><C-D>
+ " fix page up and down {{{
+map <pageup> <C-u>
+map <pagedown> <C-d>
+imap <pageup> <C-o><C-u>
+imap <pagedown> <C-o><C-d>
 
-" Toggle folds (<Space>)
- nnoremap <silent> <space> :exe 'silent! normal! '.((foldclosed('.')>0)? 'zMzx' : 'zc')<CR>
+" fast saves
+nmap <leader>w :w!<cr>
 
 
-" Commands ----------------------------------------
+" commands ----------------------------------------
 " always source vimrc on save
 augroup autosourcing
 	autocmd!
-	autocmd BufWritePost .vimrc source %
-augroup END
+	autocmd bufwritepost .vimrc source %
+augroup end
+
+" always source plugins.vim on save
+augroup autosourcing
+	autocmd!
+	autocmd bufwritepost ~/work/dotfiles/.vim/plugins.vim source %
+augroup end
 
 
 " File Types ----------------------------------------
@@ -148,7 +157,7 @@ augroup ctrlp_config
   let g:ctrlp_clear_cache_on_exit = 0 " Do not clear filenames cache, to improve CtrlP startup
   let g:ctrlp_lazy_update = 350 " Set delay to prevent extra search
   let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' } " Use python fuzzy matcher for better performance
-  " let g:ctrlp_match_window_bottom = 0 " Show at top of window
+  let g:ctrlp_match_window_bottom = 0 " Show at top of window
   let g:ctrlp_max_files = 0 " Set no file limit, we are building a big project
   let g:ctrlp_switch_buffer = 'Et' " Jump to tab AND buffer if already open
   let g:ctrlp_open_new_file = 'r' " Open newly created files in the current window
