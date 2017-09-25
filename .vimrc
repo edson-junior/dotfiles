@@ -113,14 +113,14 @@ nmap <leader>w :w!<cr>
 " commands ----------------------------------------
 " always source vimrc on save
 augroup autosourcing
-	autocmd!
-	autocmd bufwritepost .vimrc source %
+  autocmd!
+  autocmd bufwritepost .vimrc source %
 augroup end
 
 " always source plugins.vim on save
 augroup autosourcing
-	autocmd!
-	autocmd bufwritepost ~/work/dotfiles/.vim/plugins.vim source %
+  autocmd!
+  autocmd bufwritepost ~/work/dotfiles/.vim/plugins.vim source %
 augroup end
 
 
