@@ -100,7 +100,7 @@ map <C-k> <C-w>k
 map <C-h> <C-w>h
 map <C-l> <C-w>l
 
- " fix page up and down {{{
+" fix page up and down
 map <pageup> <C-u>
 map <pagedown> <C-d>
 imap <pageup> <C-o><C-u>
@@ -190,7 +190,7 @@ augroup END
 " show hidden files in nerdtree
 let NERDTreeShowHidden=1
 
-" NERD Commenter {{{
+" NERD Commenter
 augroup nerd_commenter
   autocmd!
 
