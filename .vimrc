@@ -14,6 +14,7 @@ set omnifunc=syntaxcomplete#Complete      " enable omni completion
 set shortmess=atI                         " Don't show the intro message when starting vim
 set diffopt=filler                        " Add vertical spaces to keep right and left aligned
 set diffopt+=iwhite                       " Ignore whitespace changes (focus on code changes)
+set clipboard=unnamed                     " Allow vim to copy stuff to clipboard
 
 " Local directories ----------------------------------------
 set backupdir=~/.vim/backups
