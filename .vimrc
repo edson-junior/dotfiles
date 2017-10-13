@@ -15,6 +15,7 @@ set shortmess=atI                         " Don't show the intro message when st
 set diffopt=filler                        " Add vertical spaces to keep right and left aligned
 set diffopt+=iwhite                       " Ignore whitespace changes (focus on code changes)
 set clipboard=unnamed                     " Allow vim to copy stuff to clipboard
+set noshowmode " Don't show the current mode (airline.vim takes care of us)
 
 " Local directories ----------------------------------------
 set backupdir=~/.vim/backups
@@ -150,6 +151,12 @@ augroup filetype_markdown
   let g:markdown_fenced_languages = ['ruby', 'html', 'javascript', 'css', 'erb=eruby.html', 'bash=sh']
 augroup END
 
+" ZSH
+augroup filetype_zsh
+  autocmd!
+  au BufRead,BufNewFile .zsh_rc,.functions,.commonrc set ft=zsh
+augroup END
+
 
 " Plugins configurations ---------------------------------------
 " CtrlP configs
@@ -164,6 +171,24 @@ augroup ctrlp_config
   let g:ctrlp_open_new_file = 'r' " Open newly created files in the current window
   let g:ctrlp_open_multiple_files = 'ij' " Open multiple files in hidden buffers, and jump to the first one
   let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\'
+augroup END
+
+" syntastic.vim
+augroup syntastic_config
+  autocmd!
+  let g:syntastic_error_symbol = '✗'
+  let g:syntastic_warning_symbol = '⚠'
+augroup END
+
+" airline.vim
+augroup airline_config
+  autocmd!
+  let g:airline_enable_syntastic = 1
+  let g:airline#extensions#tabline#buffer_nr_format = '%s '
+  let g:airline#extensions#tabline#buffer_nr_show = 1
+  let g:airline#extensions#tabline#enabled = 1
+  let g:airline#extensions#tabline#fnamecollapse = 0
+  let g:airline#extensions#tabline#fnamemod = ':t'
 augroup END
 
 " silver searcher config

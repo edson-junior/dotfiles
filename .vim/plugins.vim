@@ -16,6 +16,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'ap/vim-css-color'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-markdown'
+Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
