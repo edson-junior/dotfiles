@@ -15,7 +15,7 @@ set shortmess=atI                         " Don't show the intro message when st
 set diffopt=filler                        " Add vertical spaces to keep right and left aligned
 set diffopt+=iwhite                       " Ignore whitespace changes (focus on code changes)
 set clipboard=unnamed                     " Allow vim to copy stuff to clipboard
-set noshowmode " Don't show the current mode (airline.vim takes care of us)
+set noshowmode                            " Don't show the current mode (airline.vim takes care of us)
 
 " Local directories ----------------------------------------
 set backupdir=~/.vim/backups
