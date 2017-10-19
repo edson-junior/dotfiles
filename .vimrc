@@ -176,8 +176,22 @@ augroup END
 " syntastic.vim
 augroup syntastic_config
   autocmd!
+  
+  set statusline+=%#warningmsg#
+  set statusline+=%{SyntasticStatuslineFlag()}
+  set statusline+=%*
+  let g:syntastic_always_populate_loc_list = 1
+  let g:syntastic_loc_list_height = 5
+  let g:syntastic_auto_loc_list = 1
+  let g:syntastic_check_on_open = 1
+  let g:syntastic_check_on_wq = 1
+  let g:syntastic_javascript_checkers = ['eslint']
   let g:syntastic_error_symbol = '✗'
   let g:syntastic_warning_symbol = '⚠'
+  " highlight link SyntasticErrorSign SignColumn
+  " highlight link SyntasticWarningSign SignColumn
+  " highlight link SyntasticStyleErrorSign SignColumn
+  " highlight link SyntasticStyleWarningSign SignColumn
 augroup END
 
 " airline.vim
@@ -223,4 +237,28 @@ augroup nerd_commenter
   let NERDSpaceDelims=1
   let NERDCompactSexyComs=1
   let g:NERDCustomDelimiters = { 'racket': { 'left': ';', 'leftAlt': '#|', 'rightAlt': '|#' } }
+augroup END
+
+" Buffers
+augroup buffer_control
+  autocmd!
+
+  " Prompt for buffer to select (,bs)
+  nnoremap <leader>bs :CtrlPBuffer<CR>
+
+  " Buffer navigation (,,) (gb) (gB) (,ls)
+  map <Leader>, <C-^>
+  map <Leader>ls :buffers<CR>
+  map gb :bnext<CR>
+  map gB :bprev<CR>
+
+  " Jump to buffer number (<N>gb)
+  let c = 1
+  while c <= 99
+    execute "nnoremap " . c . "gb :" . c . "b\<CR>"
+    let c += 1
+  endwhile
+
+  " Close Quickfix window (,qq)
+  map <leader>qq :cclose<CR>
 augroup END
