@@ -15,7 +15,6 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'ap/vim-css-color'
 Plugin 'vim-syntastic/syntastic'
-Plugin 'mtscout6/syntastic-local-eslint.vim'
 Plugin 'tpope/vim-markdown'
 Plugin 'bling/vim-airline'
 

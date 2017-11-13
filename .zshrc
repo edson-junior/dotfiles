@@ -4,6 +4,12 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/nljunie/.oh-my-zsh
 
+# Path to node
+export PATH="/usr/local/opt/node@6/bin:$PATH"
+
+# Path to python
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/ThemesZSH_THEME="vim-atom-dark"
@@ -85,3 +91,6 @@ source $ZSH/oh-my-zsh.sh
 #
 
 alias chrome='open -a "Google Chrome"'
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
