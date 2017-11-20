@@ -6,13 +6,11 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'rking/ag.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'ap/vim-css-color'
-Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-markdown'
 Plugin 'bling/vim-airline'
 
