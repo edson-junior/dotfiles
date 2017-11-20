@@ -111,6 +111,27 @@ imap <pagedown> <C-o><C-d>
 " fast saves
 nmap <leader>w :w!<cr>
 
+" buffers  ----------------------------------------
+augroup buffer_control
+  autocmd!
+
+  " Buffer navigation (,,) (gb) (gB) (,ls)
+  map <Leader>, <C-^>
+  map <Leader>ls :buffers<CR>
+  map gb :bnext<CR>
+  map gB :bprev<CR>
+
+  " Jump to buffer number (<N>gb)
+  let c = 1
+  while c <= 99
+    execute "nnoremap " . c . "gb :" . c . "b\<CR>"
+    let c += 1
+  endwhile
+
+  " Close Quickfix window (,qq)
+  map <leader>qq :cclose<CR>
+augroup END
+
 
 " commands ----------------------------------------
 " always source vimrc on save
@@ -162,33 +183,11 @@ augroup END
 " airline.vim
 augroup airline_config
   autocmd!
-  let g:airline_enable_syntastic = 1
   let g:airline#extensions#tabline#buffer_nr_format = '%s '
   let g:airline#extensions#tabline#buffer_nr_show = 1
   let g:airline#extensions#tabline#enabled = 1
   let g:airline#extensions#tabline#fnamecollapse = 0
   let g:airline#extensions#tabline#fnamemod = ':t'
-augroup END
-
-" silver searcher config
-augroup ag_config
-  autocmd!
-
-  if executable("ag")
-    " Note we extract the column as well as the file and line number
-    set grepprg=ag\ --nogroup\ --nocolor\ --column
-    set grepformat=%f:%l:%c%m
-
-    " Have the silver searcher ignore all the same things as wilgignore
-    let b:ag_command = 'ag %s -i --nocolor --nogroup'
-
-    for i in split(&wildignore, ",")
-      let i = substitute(i, '\*/\(.*\)/\*', '\1', 'g')
-      let b:ag_command = b:ag_command . ' --ignore "' . substitute(i, '\*/\(.*\)/\*', '\1', 'g') . '"'
-    endfor
-
-    let b:ag_command = b:ag_command . ' --hidden -g ""'
-  endif
 augroup END
 
 " show hidden files in nerdtree
@@ -201,25 +200,4 @@ augroup nerd_commenter
   let NERDSpaceDelims=1
   let NERDCompactSexyComs=1
   let g:NERDCustomDelimiters = { 'racket': { 'left': ';', 'leftAlt': '#|', 'rightAlt': '|#' } }
-augroup END
-
-" Buffers
-augroup buffer_control
-  autocmd!
-
-  " Buffer navigation (,,) (gb) (gB) (,ls)
-  map <Leader>, <C-^>
-  map <Leader>ls :buffers<CR>
-  map gb :bnext<CR>
-  map gB :bprev<CR>
-
-  " Jump to buffer number (<N>gb)
-  let c = 1
-  while c <= 99
-    execute "nnoremap " . c . "gb :" . c . "b\<CR>"
-    let c += 1
-  endwhile
-
-  " Close Quickfix window (,qq)
-  map <leader>qq :cclose<CR>
 augroup END
