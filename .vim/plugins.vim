@@ -13,6 +13,9 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'ap/vim-css-color'
 Plugin 'tpope/vim-markdown'
 Plugin 'bling/vim-airline'
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'Shougo/neosnippet'
+Plugin 'Shougo/neosnippet-snippets'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
