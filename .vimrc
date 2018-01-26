@@ -94,7 +94,15 @@ nmap <leader><space> :nohlsearch<cr>
 nmap <C-n> :NERDTreeToggle <cr>
 
 " trigger emmet on ctrl+e, using <tab> ain't a great idea after all
+let g:user_emmet_install_global = 0
 let g:user_emmet_expandabbr_key = '<C-e>'
+autocmd FileType html,css,javascript,jsx,php EmmetInstall
+
+let g:user_emmet_settings = {
+\  'javascript.jsx' : {
+\      'extends' : 'jsx',
+\  },
+\}
 
 " better split switching (ctrl-j, ctrl-k, ctrl-h, ctrl-l)
 map <C-j> <C-w>j
@@ -193,29 +201,55 @@ augroup END
 " show hidden files in nerdtree
 let NERDTreeShowHidden=1
 
+" ultisnips configuration
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<C-k>"
+let g:UltiSnipsJumpBackwardTrigger="<C-j>"
+
+" vim-jsx configuration
+let g:jsx_ext_required = 0
+
+" Disable AutoComplPop.
+let g:acp_enableAtStartup = 0
+
 " enable neocomplete
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#auto_completion_start_length = 1
 let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 2
+let g:neocomplete#sources#dictionary#dictionaries = {
+  \ 'default' : '',
+  \ 'vimshell' : $HOME.'/.vimshell_hist',
+  \ 'scheme' : $HOME.'/.gosh_completions'
+    \ }
+if !exists('g:neocomplete#keyword_patterns')
+  let g:neocomplete#keyword_patterns = {}
+endif
+
+if !exists('g:neocomplete#sources#omni#input_patterns')
+  let g:neocomplete#sources#omni#input_patterns = {}
+endif
+
+let g:neocomplete#keyword_patterns['default'] = '\h\w*'
+
+inoremap <expr><C-g>  neocomplete#undo_completion()
+inoremap <expr><C-l>  neocomplete#complete_common_string()
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><C-h>  neocomplete#smart_close_popup()."\<C-h>"
+inoremap <expr><BS>   neocomplete#smart_close_popup()."\<C-h>"
+inoremap <expr><C-y>  neocomplete#close_popup()
+inoremap <expr><C-e>  neocomplete#cancel_popup()
 
 " Enable omni completion.
 augroup omnicomplete
   autocmd!
-  autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-  autocmd FileType markdown setlocal omnifunc=htmlcomplete#CompleteTags
-  autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
+  autocmd FileType css,scss setlocal omnifunc=csscomplete#CompleteCSS
+  autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
   autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
   autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
   autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+  autocmd FileType javascript UltiSnipsAddFiletypes javascript-es6
 augroup END
-
-" neocomplete snippets
-imap <C-k> <Plug>(neosnippet_expand_or_jump)
-smap <C-k> <Plug>(neosnippet_expand_or_jump)
-xmap <C-k> <Plug>(neosnippet_expand_target)
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
 " NERD Commenter
 augroup nerd_commenter
