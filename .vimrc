@@ -201,11 +201,6 @@ augroup END
 " show hidden files in nerdtree
 let NERDTreeShowHidden=1
 
-" ultisnips configuration
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<C-k>"
-let g:UltiSnipsJumpBackwardTrigger="<C-j>"
-
 " vim-jsx configuration
 let g:jsx_ext_required = 0
 
@@ -234,7 +229,6 @@ let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 
 inoremap <expr><C-g>  neocomplete#undo_completion()
 inoremap <expr><C-l>  neocomplete#complete_common_string()
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><C-h>  neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS>   neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><C-y>  neocomplete#close_popup()
@@ -248,8 +242,12 @@ augroup omnicomplete
   autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
   autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
   autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-  autocmd FileType javascript UltiSnipsAddFiletypes javascript-es6
 augroup END
+
+" neocomplete snippets
+imap <C-k> <Plug>(neosnippet_expand_or_jump)
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+    \ "\<Plug>(neosnippet_expand_or_jump)" : pumvisible ? "\<C-n>" : "\<TAB>"
 
 " NERD Commenter
 augroup nerd_commenter
