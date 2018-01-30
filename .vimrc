@@ -16,6 +16,8 @@ set diffopt=filler                        " Add vertical spaces to keep right an
 set diffopt+=iwhite                       " Ignore whitespace changes (focus on code changes)
 set clipboard=unnamed                     " Allow vim to copy stuff to clipboard
 set noshowmode                            " Don't show the current mode (airline.vim takes care of us)
+set viminfo=%,'9999,s512,n~/.vim/viminfo  " Restore buffer list, marks are remembered for 9999 files, registers up to 512Kb are remembered
+set undofile                              " Persistent Undo
 
 " Local directories ----------------------------------------
 set backupdir=~/.vim/backups
@@ -122,6 +124,8 @@ nmap <leader>w :w!<cr>
 " buffers  ----------------------------------------
 augroup buffer_control
   autocmd!
+  " Prompt for buffer to select (,bs)
+  nnoremap <leader>bs :CtrlPBuffer<CR>
 
   " Buffer navigation (,,) (gb) (gB) (,ls)
   map <Leader>, <C-^>
@@ -135,9 +139,6 @@ augroup buffer_control
     execute "nnoremap " . c . "gb :" . c . "b\<CR>"
     let c += 1
   endwhile
-
-  " Close Quickfix window (,qq)
-  map <leader>qq :cclose<CR>
 augroup END
 
 
@@ -198,6 +199,41 @@ augroup airline_config
   let g:airline#extensions#tabline#fnamemod = ':t'
 augroup END
 
+" CtrlP.vim
+augroup ctrlp_config
+  autocmd!
+  let g:ctrlp_clear_cache_on_exit = 0 " Do not clear filenames cache, to improve CtrlP startup
+  let g:ctrlp_lazy_update = 350 " Set delay to prevent extra search
+  let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' } " Use python fuzzy matcher for better performance
+  let g:ctrlp_match_window_bottom = 0 " Show at top of window
+  let g:ctrlp_max_files = 0 " Set no file limit, we are building a big project
+  let g:ctrlp_switch_buffer = 'Et' " Jump to tab AND buffer if already open
+  let g:ctrlp_open_new_file = 'r' " Open newly created files in the current window
+  let g:ctrlp_open_multiple_files = 'ij' " Open multiple files in hidden buffers, and jump to the first one
+augroup END
+
+" Silver Searcher
+augroup ag_config
+  autocmd!
+
+  if executable("ag")
+    " Note we extract the column as well as the file and line number
+    set grepprg=ag\ --nogroup\ --nocolor\ --column
+    set grepformat=%f:%l:%c%m
+
+    " Have the silver searcher ignore all the same things as wilgignore
+    let b:ag_command = 'ag %s -i --nocolor --nogroup'
+
+    for i in split(&wildignore, ",")
+      let i = substitute(i, '\*/\(.*\)/\*', '\1', 'g')
+      let b:ag_command = b:ag_command . ' --ignore "' . substitute(i, '\*/\(.*\)/\*', '\1', 'g') . '"'
+    endfor
+
+    let b:ag_command = b:ag_command . ' --hidden -g ""'
+    let g:ctrlp_user_command = b:ag_command
+  endif
+augroup END
+
 " show hidden files in nerdtree
 let NERDTreeShowHidden=1
 
@@ -247,7 +283,7 @@ augroup END
 " neocomplete snippets
 imap <C-k> <Plug>(neosnippet_expand_or_jump)
 imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-    \ "\<Plug>(neosnippet_expand_or_jump)" : pumvisible ? "\<C-n>" : "\<TAB>"
+  \ "\<Plug>(neosnippet_expand_or_jump)" : pumvisible ? "\<C-n>" : "\<TAB>"
 
 " NERD Commenter
 augroup nerd_commenter

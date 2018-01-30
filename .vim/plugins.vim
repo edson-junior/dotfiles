@@ -17,6 +17,10 @@ Plugin 'bling/vim-airline'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
+Plugin 'FelikZ/ctrlp-py-matcher'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'rking/ag.vim'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
