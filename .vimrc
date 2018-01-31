@@ -1,9 +1,10 @@
 " General configs ----------------------------------------
 so ~/.vim/plugins.vim                     " run plugins
 
-syntax enable
-
-colorscheme atom-dark-256
+set t_Co=256
+" set background=dark
+syntax on
+colorscheme Tomorrow-Night
 
 set backspace=indent,eol,start            " make backspace work normally
 set number                                " show line numbers
@@ -282,8 +283,10 @@ augroup END
 
 " neocomplete snippets
 imap <C-k> <Plug>(neosnippet_expand_or_jump)
-imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-  \ "\<Plug>(neosnippet_expand_or_jump)" : pumvisible ? "\<C-n>" : "\<TAB>"
+smap <C-k> <Plug>(neosnippet_expand_or_jump)
+xmap <C-k> <Plug>(neosnippet_expand_target)
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
 " NERD Commenter
 augroup nerd_commenter
