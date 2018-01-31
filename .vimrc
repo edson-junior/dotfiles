@@ -2,7 +2,7 @@
 so ~/.vim/plugins.vim                     " run plugins
 
 set t_Co=256
-" set background=dark
+set background=dark
 syntax on
 colorscheme Tomorrow-Night
 
