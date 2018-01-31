@@ -95,6 +95,7 @@ nmap <leader><space> :nohlsearch<cr>
 
 " toggle nerdtree on control + n
 nmap <C-n> :NERDTreeToggle <cr>
+nmap <leader>m :NERDTreeFind<CR>
 
 " trigger emmet on ctrl+e, using <tab> ain't a great idea after all
 let g:user_emmet_install_global = 0
