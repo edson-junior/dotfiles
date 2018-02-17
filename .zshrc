@@ -13,7 +13,7 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/ThemesZSH_THEME="vim-atom-dark"
-ZSH_THEME="pygmalion"
+ZSH_THEME="pure"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -94,3 +94,6 @@ alias chrome='open -a "Google Chrome"'
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+autoload -U promptinit; promptinit
+prompt pure

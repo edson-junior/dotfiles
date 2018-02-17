@@ -19,6 +19,8 @@ set clipboard=unnamed                     " Allow vim to copy stuff to clipboard
 set noshowmode                            " Don't show the current mode (airline.vim takes care of us)
 set viminfo=%,'9999,s512,n~/.vim/viminfo  " Restore buffer list, marks are remembered for 9999 files, registers up to 512Kb are remembered
 set undofile                              " Persistent Undo
+set colorcolumn=80                        " Set column marker
+
 
 " Local directories ----------------------------------------
 set backupdir=~/.vim/backups
@@ -141,6 +143,10 @@ augroup buffer_control
     execute "nnoremap " . c . "gb :" . c . "b\<CR>"
     let c += 1
   endwhile
+
+  " Close buffer
+  map <Leader>qq :bd<CR>
+
 augroup END
 
 
@@ -194,6 +200,7 @@ augroup END
 " airline.vim
 augroup airline_config
   autocmd!
+  let g:airline_theme='tomorrow'
   let g:airline#extensions#tabline#buffer_nr_format = '%s '
   let g:airline#extensions#tabline#buffer_nr_show = 1
   let g:airline#extensions#tabline#enabled = 1
