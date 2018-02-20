@@ -5,7 +5,7 @@
 export ZSH=/Users/nljunie/.oh-my-zsh
 
 # Path to node
-export PATH="/usr/local/opt/node@6/bin:$PATH"
+export PATH="/usr/local/opt/node@8/bin:$PATH"
 
 # Path to python
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
