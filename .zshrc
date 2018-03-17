@@ -10,6 +10,9 @@ export PATH="/usr/local/opt/node@8/bin:$PATH"
 # Path to python
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
+# Path to mysql
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/ThemesZSH_THEME="vim-atom-dark"
