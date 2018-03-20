@@ -165,6 +165,12 @@ augroup end
 
 
 " File Types ----------------------------------------
+" Jade
+augroup filetype_jade
+  autocmd!
+  au BufRead,BufNewFile *.pug set ft=jade syntax=jade
+augroup END
+
 " JavaScript
 augroup filetype_javascript
   autocmd!

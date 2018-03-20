@@ -24,6 +24,7 @@ Plugin 'FelikZ/ctrlp-py-matcher'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rking/ag.vim'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'vim-scripts/jade.vim'
 
 
 " All of your Plugins must be added before the following line
