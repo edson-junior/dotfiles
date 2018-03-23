@@ -1,4 +1,13 @@
 " General configs ----------------------------------------
+
+" File Encoding ----------------------------------------
+set encoding=utf-8 nobomb
+set fileencoding=utf-8
+set fileencodings=utf-8
+set bomb
+set binary
+set ttyfast
+
 so ~/.vim/plugins.vim                     " run plugins
 
 set t_Co=256
@@ -33,15 +42,6 @@ set wildignore+=.DS_Store
 set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.gif,*.psd,*.o,*.obj,*.min.js
 set wildignore+=*/bower_components/*,*/node_modules/*
 set wildignore+=*/smarty/*,*/vendor/*,*/.git/*,*/.hg/*,*/.svn/*,*/.sass-cache/*,*/log/*,*/tmp/*,*/build/*,*/ckeditor/*,*/doc/*,*/source_maps/*,*/dist/*
-
-
-" File Encoding ----------------------------------------
-set encoding=utf-8 nobomb
-set fileencoding=utf-8
-set fileencodings=utf-8
-set bomb
-set binary
-set ttyfast
 
 
 " Tabs related settings ----------------------------------------
