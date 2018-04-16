@@ -295,6 +295,12 @@ augroup omnicomplete
   autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 augroup END
 
+" Enable snipMate compatibility feature.
+let g:neosnippet#enable_snipmate_compatibility = 1
+
+" Tell Neosnippet about the other snippets
+let g:neosnippet#snippets_directory='~/.vim/bundle/snipmate-mocha/snippets'
+
 " neocomplete snippets
 imap <C-k> <Plug>(neosnippet_expand_or_jump)
 smap <C-k> <Plug>(neosnippet_expand_or_jump)
