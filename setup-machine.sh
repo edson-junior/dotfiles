@@ -26,6 +26,8 @@ export PATH=$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH
 
 # trash as the safe `rm` alternative
 npm install --global trash-cli
+npm install --global gitignore
+npm install --global npm-check-updates
 
 
 
