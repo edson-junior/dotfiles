@@ -87,10 +87,10 @@ set smartcase
 let mapleader=','
 
 " quickly open my vimrc
-nmap <leader>ev :tabedit ~/work/dotfiles/.vimrc <cr>
+nmap <leader>ev :e ~/work/dotfiles/.vimrc <cr>
 
 " quickly open plugin list
-nmap <leader>ep :tabedit ~/work/dotfiles/.vim/plugins.vim <cr>
+nmap <leader>ep :e ~/work/dotfiles/.vim/plugins.vim <cr>
 
 " quickly remove highliting after searching
 nmap <leader><space> :nohlsearch<cr>
