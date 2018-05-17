@@ -28,6 +28,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-scripts/jade.vim'
 Plugin 'wavded/vim-stylus'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'honza/vim-snippets'
 
 
 " All of your Plugins must be added before the following line
