@@ -21,6 +21,7 @@ brew cask install virtualbox
 # dev
 brew cask install iterm2
 brew cask install atom
+brew cask install visual-studio-code
 
 # browsers
 brew cask install google-chrome-canary
