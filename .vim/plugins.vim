@@ -19,7 +19,7 @@ Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'Shougo/neosnippet'
-Plugin 'Shougo/neosnippet-snippets'
+Plugin 'edson-junior/neosnippet-snippets'
 Plugin 'mmozuras/snipmate-mocha'
 Plugin 'FelikZ/ctrlp-py-matcher'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -27,7 +27,6 @@ Plugin 'rking/ag.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-scripts/jade.vim'
 Plugin 'wavded/vim-stylus'
-Plugin 'honza/vim-snippets'
 
 
 " All of your Plugins must be added before the following line
