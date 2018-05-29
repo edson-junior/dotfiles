@@ -101,12 +101,16 @@ nmap <leader>m :NERDTreeFind<CR>
 
 " trigger emmet on ctrl+e, using <tab> ain't a great idea after all
 let g:user_emmet_install_global = 0
-let g:user_emmet_expandabbr_key = '<C-e>'
-autocmd FileType html,css,javascript,jsx,php EmmetInstall
+autocmd FileType html,css,javascript,jsx,jsp,php EmmetInstall
 
+let g:user_emmet_leader_key = '<C-e>'
+let g:user_emmet_mode='inv'
 let g:user_emmet_settings = {
 \  'javascript.jsx' : {
 \      'extends' : 'jsx',
+\  },
+\  'jsp' : {
+\      'extends' : 'html',
 \  },
 \}
 
