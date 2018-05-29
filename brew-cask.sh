@@ -17,12 +17,13 @@ brew cask install docker
 brew cask install docker-compose
 brew cask install skype
 brew cask install virtualbox
+brew cask install the-unarchiver
 
 # dev
 brew cask install iterm2
 brew cask install atom
 brew cask install visual-studio-code
-brew cask install docker
+brew cask install sourcetree
 
 # browsers
 brew cask install google-chrome-canary
@@ -35,3 +36,7 @@ brew cask install spotify
 # fonts
 brew tap caskroom/fonts 
 brew cask install font-fira-code
+
+# messaging
+brew cask install signal
+

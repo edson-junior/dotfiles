@@ -31,6 +31,7 @@ brew install aria2
 brew install git-standup
 brew install httpie
 brew install mysql
+brew install mongodb
 brew install the_silver_searcher
 brew install git
 brew install node # This installs `npm` too using the recommended installation method
