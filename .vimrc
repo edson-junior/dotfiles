@@ -155,15 +155,10 @@ augroup END
 
 
 " commands ----------------------------------------
-" always source vimrc on save
+" always source vimrc and plugins.vim on save
 augroup autosourcing
   autocmd!
   autocmd bufwritepost .vimrc source %
-augroup end
-
-" always source plugins.vim on save
-augroup autosourcing
-  autocmd!
   autocmd bufwritepost ~/work/dotfiles/.vim/plugins.vim source %
 augroup end
 
