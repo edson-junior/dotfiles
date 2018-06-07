@@ -41,6 +41,7 @@ set undodir=~/.vim/undo
 set wildignore+=.DS_Store
 set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.gif,*.psd,*.o,*.obj,*.min.js
 set wildignore+=*/bower_components/*,*/node_modules/*
+set wildignore+=*/webroot/WEB-INF/lib/*,*/webroot/_ui/*,*npm-debug.log*,*/project/.buildflag*,*/project/grunt-tmp/*
 set wildignore+=*/smarty/*,*/vendor/*,*/.git/*,*/.hg/*,*/.svn/*,*/.sass-cache/*,*/log/*,*/tmp/*,*/build/*,*/ckeditor/*,*/doc/*,*/source_maps/*,*/dist/*
 
 
