@@ -224,6 +224,7 @@ augroup ctrlp_config
   let g:ctrlp_switch_buffer = 'Et' " Jump to tab AND buffer if already open
   let g:ctrlp_open_new_file = 'r' " Open newly created files in the current window
   let g:ctrlp_open_multiple_files = 'ij' " Open multiple files in hidden buffers, and jump to the first one
+  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 augroup END
 
 " Silver Searcher
