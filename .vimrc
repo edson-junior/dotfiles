@@ -237,7 +237,7 @@ augroup ag_config
     set grepprg=ag\ --nogroup\ --nocolor\ --column
     set grepformat=%f:%l:%c%m
 
-    " Have the silver searcher ignore all the same things as wilgignore
+    " Have the silver searcher ignore all the same things as wildignore
     let b:ag_command = 'ag %s -i --nocolor --nogroup'
 
     for i in split(&wildignore, ",")
