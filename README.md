@@ -1,4 +1,4 @@
-# dotfiles
+# Dotfiles
 
 🎁 My beautiful little dotfiles
 
