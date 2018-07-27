@@ -2,7 +2,7 @@
 
 🎁 My beautiful little dotfiles
 
-## installing & using
+## How to install
 - read and run parts of ```setup-machine.sh```
 - read and run ```symlink-setup.sh```
 
