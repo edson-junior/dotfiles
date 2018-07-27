@@ -9,6 +9,9 @@
 - read and run parts of ```setup-machine.sh```
 - read and run ```symlink-setup.sh```
 
+## Feedback
+Any suggestions are [welcome](https://github.com/edson-junior/dotfiles/issues)!
+
 ## Acknowledgements
 - Thanks to **[Paul Irish's dotfiles](https://github.com/paulirish/dotfiles)**
 - And many others out there with awesome dotfiles repos that 
