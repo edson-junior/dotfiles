@@ -1,4 +1,4 @@
-# Dotfiles
+# 🔧Dotfiles
 If you want to use my dotfiles, first fork this repo, take a look at the code, then edit the files or remove the stuff that you won't be using. This repository is a collection of .files that cater to my needs.
 
 ## How to install
