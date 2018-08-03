@@ -11,5 +11,4 @@ Any suggestions are [welcome](https://github.com/edson-junior/dotfiles/issues)!
 ## Thanks to...
 - Paul Irish's **[dotfiles](https://github.com/paulirish/dotfiles)**
 - Mathias Bynens' **[dotfiles](https://github.com/mathiasbynens/dotfiles)**
-- And many others out there with awesome dotfiles repos that 
-helped me come up with this one, one way or another 😃
+- And many others 😃
