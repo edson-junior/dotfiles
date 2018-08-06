@@ -8,6 +8,9 @@ If you want to use my dotfiles, first fork this repo, take a look at the code, t
 ## Feedback
 Any suggestions are [welcome](https://github.com/edson-junior/dotfiles/issues)!
 
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
 ## Contributing
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
 
