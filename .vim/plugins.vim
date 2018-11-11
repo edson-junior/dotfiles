@@ -27,6 +27,7 @@ Plugin 'rking/ag.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-scripts/jade.vim'
 Plugin 'wavded/vim-stylus'
+Plugin 'styled-components/vim-styled-components'
 
 
 " All of your Plugins must be added before the following line
