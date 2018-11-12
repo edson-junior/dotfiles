@@ -6,7 +6,6 @@
   "emmet.triggerExpansionOnTab": true,
   "editor.rulers": [80],
   "editor.tabSize": 2,
-  "editor.lineHeight": 22,
   "files.trimTrailingWhitespace": true,
   "editor.minimap.enabled": false,
   "emmet.includeLanguages": {
