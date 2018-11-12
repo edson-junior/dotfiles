@@ -1,0 +1,17 @@
+{
+  "atomKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": true,
+  "window.zoomLevel": 0,
+  "emmet.triggerExpansionOnTab": true,
+  "editor.rulers": [80],
+  "editor.tabSize": 2,
+  "editor.lineHeight": 22,
+  "files.trimTrailingWhitespace": true,
+  "editor.minimap.enabled": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "eslint.alwaysShowStatus": false,
+  "eslint.autoFixOnSave": true,
+}
