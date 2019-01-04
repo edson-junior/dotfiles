@@ -13,4 +13,19 @@
   },
   "eslint.alwaysShowStatus": false,
   "eslint.autoFixOnSave": true,
+  "colorize.ignore_search_variables_info": true,
+  "colorize.languages": [
+    "css",
+    "sass",
+    "scss",
+    "less",
+    "postcss",
+    "sss",
+    "stylus",
+    "svg"
+  ],
+  "emmet.syntaxProfiles": {
+    "jsp": "html",
+    "tag": "html"
+  }
 }
