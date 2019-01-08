@@ -201,6 +201,12 @@ augroup filetype_zsh
   au BufRead,BufNewFile .zsh_rc,.functions,.commonrc set ft=zsh
 augroup END
 
+" graphql
+augroup filetype_graphql
+  autocmd!
+  au BufRead,BufNewFile *.graphql,*.graphqls,*.gql,*.prisma set ft=graphql
+augroup END
+
 
 " Plugins configurations ---------------------------------------
 " airline.vim
