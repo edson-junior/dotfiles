@@ -38,6 +38,7 @@ brew install node # This installs `npm` too using the recommended installation m
 brew install ffmpeg --with-libvpx
 brew install zsh
 brew install git-recent
+brew install zsh-autosuggestions
 
 # Remove outdated versions from the cellar
 brew cleanup
