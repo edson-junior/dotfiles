@@ -18,6 +18,7 @@ brew cask install docker-compose
 brew cask install skype
 brew cask install virtualbox
 brew cask install the-unarchiver
+brew cask install 1password
 
 # dev
 brew cask install iterm2
