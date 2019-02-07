@@ -33,6 +33,7 @@ brew cask install firefoxnightly
 # players
 brew cask install vlc
 brew cask install spotify
+brew cask install spotify-notifications
 
 # fonts
 brew tap caskroom/fonts 
