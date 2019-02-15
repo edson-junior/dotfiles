@@ -23,8 +23,6 @@ brew install wget
 brew install vim 
 brew install nano
 brew install grep
-brew install openssh
-brew install screen
 
 # Install other useful binaries
 brew install aria2
