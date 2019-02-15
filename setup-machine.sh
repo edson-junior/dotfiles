@@ -28,6 +28,7 @@
 npm install --global trash-cli
 npm install --global gitignore
 npm install --global npm-check-updates
+npm install --global pure-prompt
 
 
 

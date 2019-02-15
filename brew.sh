@@ -17,14 +17,14 @@ brew install findutils
 brew install gnu-sed
 
 # Install wget with IRI support
-brew install wget --with-iri
+brew install wget
 
 # Install more recent versions of some OS X tools
-brew install vim --with-override-system-vi
-brew install homebrew/dupes/nano
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
+brew install vim 
+brew install nano
+brew install grep
+brew install openssh
+brew install screen
 
 # Install other useful binaries
 brew install aria2
@@ -35,10 +35,11 @@ brew install mongodb
 brew install the_silver_searcher
 brew install git
 brew install node # This installs `npm` too using the recommended installation method
-brew install ffmpeg --with-libvpx
+brew install ffmpeg libvpx
 brew install zsh
 brew install git-recent
 brew install zsh-autosuggestions
+brew install zsh-syntax-highlighting
 
 # Remove outdated versions from the cellar
 brew cleanup

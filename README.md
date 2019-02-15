@@ -2,6 +2,15 @@
 If you want to use my dotfiles, first fork this repo, take a look at the code, then edit the files or remove the stuff that you won't be using. This repository is a collection of dotfiles that cater to my needs.
 
 ## How to install
+
+Install Oh My ZSH
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+then
+
 - read and run parts of ```setup-machine.sh```
 - read and run ```symlink-setup.sh```
 

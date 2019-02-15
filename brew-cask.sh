@@ -7,14 +7,14 @@
 
 # Install native apps
 
-brew install caskroom/cask/brew-cask
+# brew install caskroom/cask/brew-cask
 # brew tap caskroom/versions
 
 # daily
 brew cask install dropbox
 brew cask install enpass
 brew cask install docker 
-brew cask install docker-compose
+brew cask install docker-toolbox
 brew cask install skype
 brew cask install virtualbox
 brew cask install the-unarchiver
