@@ -107,3 +107,4 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 autoload -U promptinit; promptinit
 prompt pure
+source /Users/nljunie/work/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
