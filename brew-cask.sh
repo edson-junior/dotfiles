@@ -27,8 +27,8 @@ brew cask install visual-studio-code
 brew cask install sourcetree
 
 # browsers
-brew cask install google-chrome-canary
-brew cask install firefoxnightly
+brew cask install google-chrome
+brew cask install firefox
 
 # players
 brew cask install vlc
