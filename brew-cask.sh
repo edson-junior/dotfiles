@@ -18,6 +18,7 @@ brew cask install skype
 brew cask install virtualbox
 brew cask install the-unarchiver
 brew cask install 1password
+brew cask install kap
 
 # dev
 brew cask install iterm2
