@@ -33,7 +33,7 @@ brew install mongodb
 brew install the_silver_searcher
 brew install git
 brew install node # This installs `npm` too using the recommended installation method
-brew install ffmpeg libvpx
+brew install ffmpeg
 brew install zsh
 brew install git-recent
 brew install zsh-autosuggestions
