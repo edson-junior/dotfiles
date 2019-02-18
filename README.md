@@ -3,16 +3,22 @@ If you want to use my dotfiles, first fork this repo, take a look at the code, t
 
 ## How to install
 
-Install Oh My ZSH
+### Install Oh My ZSH
 
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-then
+### Then
 
 - read and run parts of ```setup-machine.sh```
 - read and run ```symlink-setup.sh```
+
+### Symlink vscode to settings.js:
+
+```
+ln -sf ~/path/to/vscode.json /Users/home/Library/Application\ Support/Code/User/settings.json
+```
 
 ## Feedback
 Any suggestions are [welcome](https://github.com/edson-junior/dotfiles/issues)!
