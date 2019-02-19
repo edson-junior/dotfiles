@@ -1,4 +1,11 @@
+# copy to ~/.ssh/config
+
 Host *
- AddKeysToAgent yes
- UseKeychain yes
- IdentityFile ~/.ssh/id_rsa
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+  Protocol 2
+  Compression yes
+  TCPKeepAlive yes
+  ServerAliveInterval 20
+  ServerAliveCountMax 10
