@@ -30,4 +30,5 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 ## Thanks to...
 - Paul Irish's **[dotfiles](https://github.com/paulirish/dotfiles)**
 - Mathias Bynens' **[dotfiles](https://github.com/mathiasbynens/dotfiles)**
+- Wes Bos' **[dotfiles](https://github.com/wesbos/dotfiles)**
 - And many others 😃
