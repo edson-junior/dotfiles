@@ -12,10 +12,10 @@ If you want to use my dotfiles, first fork this repo, take a look at the code, t
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-### Symlink vscode to settings.js:
+### Symlink settings.js:
 
 ```
-ln -sf ~/path/to/vscode.json /Users/home/Library/Application\ Support/Code/User/settings.json
+ln -sf ~/path/to/vscode/settings.json /Users/home/Library/Application\ Support/Code/User/settings.json
 ```
 
 ## Feedback
