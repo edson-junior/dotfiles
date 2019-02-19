@@ -1,4 +1,7 @@
 # Dotfiles
+
+![Example](example.png)
+
 If you want to use my dotfiles, first fork this repo, take a look at the code, then edit the files or remove the stuff that you won't be using. This repository is a collection of dotfiles that cater to my needs.
 
 ## How to install
@@ -20,7 +23,7 @@ ln -sf ~/path/to/vscode/settings.json /Users/home/Library/Application\ Support/C
 
 Don't forget to enable the stupif f**ing [scroll wheel](https://stackoverflow.com/questions/14437979/iterm2-scroll-less-output-with-mouse/37610820#37610820) on iTerm:
 
-![Example](iterm-scroll.png)
+![iTerm scroll wheel](iterm-scroll.png)
 
 ## Feedback
 Any suggestions are [welcome](https://github.com/edson-junior/dotfiles/issues)!
