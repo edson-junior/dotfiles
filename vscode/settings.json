@@ -27,5 +27,11 @@
   "emmet.syntaxProfiles": {
     "jsp": "html",
     "tag": "html"
+  },
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
   }
 }
