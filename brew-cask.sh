@@ -40,5 +40,5 @@ brew tap caskroom/fonts
 brew cask install font-fira-code
 
 # messaging
-brew cask install signal
+# brew cask install signal
 
