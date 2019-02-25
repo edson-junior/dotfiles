@@ -33,5 +33,6 @@
     "**/.project": true,
     "**/.settings": true,
     "**/.factorypath": true
-  }
+  },
+  "gitlens.codeLens.enabled": false,
 }
