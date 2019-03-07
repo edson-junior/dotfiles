@@ -16,7 +16,9 @@ brew cask install enpass
 brew cask install docker 
 brew cask install docker-toolbox
 brew cask install skype
-# brew cask install virtualbox
+# virtualbox needs to be unblocked in:
+# - system preferences => Security & Privacy => General
+brew cask install virtualbox
 brew cask install the-unarchiver
 brew cask install 1password
 brew cask install kap
