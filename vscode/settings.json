@@ -35,4 +35,6 @@
     "**/.factorypath": true
   },
   "gitlens.codeLens.enabled": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }
