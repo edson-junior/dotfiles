@@ -28,3 +28,5 @@
   added = yellow bold
   changed = red bold
   untracked = red bold
+[fetch]
+  prune = true
