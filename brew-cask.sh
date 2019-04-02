@@ -29,6 +29,7 @@ brew cask install iterm2
 brew cask install visual-studio-code
 brew cask install sourcetree
 brew cask install java8
+brew cask install intellij-idea-ce
 
 # browsers
 brew cask install google-chrome
