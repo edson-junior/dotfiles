@@ -23,6 +23,7 @@ brew cask install the-unarchiver
 brew cask install 1password
 brew cask install kap
 brew cask install keepingyouawake
+brew cask install qlcolorcode
 
 # dev
 brew cask install iterm2
