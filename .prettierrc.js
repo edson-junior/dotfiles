@@ -4,6 +4,14 @@ module.exports = {
   useTabs: false,
   // semi: false,
   singleQuote: true,
+  overrides: [
+    {
+      "files": "**/*.scss",
+      "options": {
+        singleQuote: false
+      }
+    }
+  ],
   // trailingComma: "all",
   bracketSpacing: true,
   jsxBracketSameLine: false
