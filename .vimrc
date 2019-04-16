@@ -152,6 +152,9 @@ augroup buffer_control
   " Close buffer
   map <Leader>qq :bd<CR>
 
+  " Toggle split pane
+  map <Leader>rr :vertical resize 800<CR>
+
 augroup END
 
 
