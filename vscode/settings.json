@@ -2,6 +2,7 @@
   "atomKeymap.promptV3Features": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.formatOnPaste": true,
+  "workbench.editor.enablePreview": false,
   "window.zoomLevel": 0,
   "emmet.triggerExpansionOnTab": true,
   "editor.rulers": [80],
