@@ -39,6 +39,7 @@ brew install git-recent
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 brew install youtube-dl
+brew install heroku/brew/heroku
 
 # Remove outdated versions from the cellar
 brew cleanup
