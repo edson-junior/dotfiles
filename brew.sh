@@ -40,6 +40,7 @@ brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 brew install youtube-dl
 brew install heroku/brew/heroku
+brew install ttfautohint fontforge
 
 # Remove outdated versions from the cellar
 brew cleanup
