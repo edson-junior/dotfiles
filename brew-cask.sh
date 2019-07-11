@@ -25,6 +25,7 @@ brew cask install kap
 brew cask install keepingyouawake
 brew cask install qlcolorcode
 brew cask install teamviewer
+brew cask install authy
 
 # dev
 brew cask install iterm2
