@@ -13,6 +13,6 @@ module.exports = {
     }
   ],
   // trailingComma: "all",
-  bracketSpacing: true,
+  bracketSpacing: false,
   jsxBracketSameLine: false
 };
