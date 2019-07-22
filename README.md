@@ -21,7 +21,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ln -sf ~/path/to/vscode/settings.json /Users/home/Library/Application\ Support/Code/User/settings.json
 ```
 
-Don't forget to enable the stupif f**ing [scroll wheel](https://stackoverflow.com/questions/14437979/iterm2-scroll-less-output-with-mouse/37610820#37610820) on iTerm:
+Don't forget to enable the stupid f**ing [scroll wheel](https://stackoverflow.com/questions/14437979/iterm2-scroll-less-output-with-mouse/37610820#37610820) on iTerm:
 
 ![iTerm scroll wheel](iterm-scroll.png)
 
