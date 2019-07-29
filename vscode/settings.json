@@ -41,6 +41,7 @@
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
   "[json]": {
     "editor.formatOnSave": false
   },
