@@ -42,12 +42,6 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.formatOnSave": false,
   "editor.formatOnPaste": false,
-  "[json]": {
-    "editor.formatOnSave": false
-  },
-  "[jsonc]": {
-    "editor.formatOnSave": false
-  },
   "explorer.confirmDelete": false,
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
