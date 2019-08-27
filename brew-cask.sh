@@ -37,6 +37,7 @@ brew cask install intellij-idea-ce
 # browsers
 brew cask install google-chrome
 brew cask install firefox
+brew cask install brave-browser
 
 # players
 brew cask install vlc
