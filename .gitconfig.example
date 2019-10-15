@@ -1,6 +1,6 @@
 [user]
   name = Edson Junior
-  ; email = email@email.com
+  email = email@email.com
 [core]
   excludesfile = /Users/home/.gitignore_global
   editor = vim
