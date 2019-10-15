@@ -3,7 +3,7 @@
 Host *
   AddKeysToAgent yes
   UseKeychain yes
-  IdentityFile ~/.ssh/id_rsa
+  IdentityFile ~/.ssh/id_rsa_work
   Protocol 2
   Compression yes
   TCPKeepAlive yes
