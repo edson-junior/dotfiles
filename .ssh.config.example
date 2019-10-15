@@ -1,11 +1,17 @@
 # copy to ~/.ssh/config
 
+# Personal
+Host github.com
+ HostName github.com
+ IdentityFile ~/.ssh/id_rsa
+
+# Work
+Host bitbucket.org
+ HostName bitbucket.org
+ IdentityFile ~/.ssh/id_rsa_work
+
 Host *
+  User git
   AddKeysToAgent yes
   UseKeychain yes
-  IdentityFile ~/.ssh/id_rsa_work
-  Protocol 2
   Compression yes
-  TCPKeepAlive yes
-  ServerAliveInterval 20
-  ServerAliveCountMax 10
