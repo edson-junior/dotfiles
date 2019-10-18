@@ -16,6 +16,9 @@ export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 # Path to git-recent
 export PATH="/usr/local/opt/git-recent/bin:$PATH"
 
+# Path to Ruby
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+
 
 
 # Set name of the theme to load. Optionally, if you set this to "random"
