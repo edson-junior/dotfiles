@@ -51,5 +51,6 @@
   },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
-  }
+  },
+  "workbench.iconTheme": "material-icon-theme"
 }
