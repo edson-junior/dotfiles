@@ -30,6 +30,7 @@ brew cask install authy
 # Run command: sudo spctl --master-disable
 brew cask install postman
 # Then run this command afterwards: sudo spctl --master-enable
+brew cask install appcleaner
 
 # dev
 brew cask install iterm2
