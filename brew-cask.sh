@@ -26,6 +26,10 @@ brew cask install keepingyouawake
 brew cask install qlcolorcode
 brew cask install teamviewer
 brew cask install authy
+# In case Postman throws the error message: "Postman can’t be opened because Apple cannot check it for malicious software."
+# Run command: sudo spctl --master-disable
+brew cask install postman
+# Then run this command afterwards: sudo spctl --master-enable
 
 # dev
 brew cask install iterm2
