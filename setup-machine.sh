@@ -32,6 +32,7 @@ npm install --global pure-prompt
 npm install --global n
 npm install --global npx
 npm install --global redoc-cli
+npm install --global typescript
 sudo gem install mailcatcher
 
 
