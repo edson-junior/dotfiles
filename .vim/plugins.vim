@@ -29,6 +29,7 @@ Plugin 'vim-scripts/jade.vim'
 Plugin 'wavded/vim-stylus'
 Plugin 'styled-components/vim-styled-components'
 Plugin 'jparise/vim-graphql'
+Plugin 'leafgarland/typescript-vim'
 
 
 " All of your Plugins must be added before the following line
