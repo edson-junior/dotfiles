@@ -49,7 +49,7 @@ brew cask install vlc
 brew cask install spotify
 
 # fonts
-brew tap caskroom/fonts 
+brew tap homebrew/cask-fonts
 brew cask install font-fira-code
 
 # messaging
