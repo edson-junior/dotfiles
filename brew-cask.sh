@@ -12,7 +12,7 @@ brew tap homebrew/cask-versions
 
 # daily
 brew cask install dropbox
-brew cask install enpass
+# brew cask install enpass
 brew cask install docker 
 brew cask install docker-toolbox
 brew cask install skype
@@ -35,9 +35,9 @@ brew cask install appcleaner
 # dev
 brew cask install iterm2
 brew cask install visual-studio-code
-brew cask install sourcetree
-brew cask install java8
-brew cask install intellij-idea-ce
+# brew cask install sourcetree
+# brew cask install java8
+# brew cask install intellij-idea-ce
 
 # browsers
 brew cask install google-chrome
