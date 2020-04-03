@@ -1,7 +1,7 @@
 {
   "atomKeymap.promptV3Features": true,
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.formatOnPaste": true,
+  "editor.formatOnPaste": false,
   "workbench.editor.enablePreview": false,
   "window.zoomLevel": 0,
   "emmet.triggerExpansionOnTab": true,
@@ -41,7 +41,6 @@
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.formatOnSave": false,
-  "editor.formatOnPaste": false,
   "explorer.confirmDelete": false,
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
