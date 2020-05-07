@@ -83,6 +83,11 @@ set ignorecase
 set smartcase
 
 
+" spell checking  ----------------------------------------
+set spell spelllang=en_us,es_es,nl,pt_br,it
+set spell
+
+
 " mappings ----------------------------------------
 " !!! the leader key is always comma => ','
 let mapleader=','
