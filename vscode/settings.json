@@ -48,5 +48,8 @@
   "workbench.iconTheme": "material-icon-theme",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "java.requirements.JDK11Warning": false,
+  "maven.executable.preferMavenWrapper": false,
+  "java.semanticHighlighting.enabled": true
 }
