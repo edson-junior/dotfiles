@@ -45,3 +45,7 @@ brew install unrar
 
 # Remove outdated versions from the cellar
 brew cleanup
+
+# experimental stuff
+brew install deno
+
