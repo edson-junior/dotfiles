@@ -33,8 +33,9 @@ brew cask install postman
 brew cask install appcleaner
 
 # dev
-brew cask install iterm2
+# brew cask install iterm2
 brew cask install visual-studio-code
+brew cask install hyper
 # brew cask install sourcetree
 # brew cask install java8
 # brew cask install intellij-idea-ce
