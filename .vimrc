@@ -11,9 +11,7 @@ set ttyfast
 so ~/.vim/plugins.vim                     " run plugins
 
 set t_Co=256
-set background=dark
 syntax on
-colorscheme Tomorrow-Night
 
 set backspace=indent,eol,start            " make backspace work normally
 set number                                " show line numbers
@@ -29,6 +27,9 @@ set noshowmode                            " Don't show the current mode (airline
 set viminfo=%,'9999,s512,n~/.vim/viminfo  " Restore buffer list, marks are remembered for 9999 files, registers up to 512Kb are remembered
 set undofile                              " Persistent Undo
 set colorcolumn=80                        " Set column marker
+" set color of column bar
+hi ColorColumn ctermbg=235
+
 
 
 " Local directories ----------------------------------------
@@ -72,7 +73,6 @@ set foldnestmax=5 " set max fold nesting level
 
 " visual settings ----------------------------------------
 set mousemodel=popup
-set t_co=256
 set guioptions=egmrti
 
 
@@ -223,7 +223,7 @@ augroup END
 " airline.vim
 augroup airline_config
   autocmd!
-  let g:airline_theme='tomorrow'
+  let g:airline_theme='base16_snazzy'
   let g:airline#extensions#tabline#buffer_nr_format = '%s '
   let g:airline#extensions#tabline#buffer_nr_show = 1
   let g:airline#extensions#tabline#enabled = 1
