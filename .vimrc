@@ -18,7 +18,7 @@ set number                                " show line numbers
 set ruler
 set visualbell                            " remove annoying vim bell/beeping
 set mouse=a                               " enable scrolling
-set shortmess=atI                         " Don't show the intro message when starting vim
+" set shortmess=atI                         " Don't show the intro message when starting vim
 set diffopt=filler                        " Add vertical spaces to keep right and left aligned
 set diffopt+=iwhite                       " Ignore whitespace changes (focus on code changes)
 set clipboard=unnamed                     " Allow vim to copy stuff to clipboard
@@ -26,9 +26,9 @@ set noshowmode                            " Don't show the current mode (airline
 set viminfo=%,'9999,s512,n~/.vim/viminfo  " Restore buffer list, marks are remembered for 9999 files, registers up to 512Kb are remembered
 set undofile                              " Persistent Undo
 set colorcolumn=80                        " Set column marker
+
 " set color of column bar
 hi ColorColumn ctermbg=235
-
 
 
 " Local directories ----------------------------------------
@@ -175,12 +175,6 @@ augroup end
 
 
 " File Types ----------------------------------------
-" Jade
-augroup filetype_jade
-  autocmd!
-  au BufRead,BufNewFile *.pug set ft=jade syntax=jade
-augroup END
-
 " JavaScript
 augroup filetype_javascript
   autocmd!
@@ -191,12 +185,6 @@ augroup END
 augroup filetype_json
   autocmd!
   au BufRead,BufNewFile *.json,*.snap set ft=json syntax=javascript
-augroup END
-
-" XML
-augroup filetype_xml
-  autocmd!
-  au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
 augroup END
 
 " Markdown
@@ -235,7 +223,7 @@ augroup ctrlp_config
   autocmd!
   let g:ctrlp_clear_cache_on_exit = 0 " Do not clear filenames cache, to improve CtrlP startup
   let g:ctrlp_lazy_update = 350 " Set delay to prevent extra search
-  " let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' } " Use python fuzzy matcher for better performance
+  let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' } " Use python fuzzy matcher for better performance
   let g:ctrlp_match_window_bottom = 0 " Show at top of window
   let g:ctrlp_max_files = 0 " Set no file limit, we are building a big project
   let g:ctrlp_switch_buffer = 'Et' " Jump to tab AND buffer if already open
