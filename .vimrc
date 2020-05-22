@@ -91,7 +91,7 @@ hi SpellBad ctermfg=168 ctermbg=none cterm=underline
 
 
 " mappings ----------------------------------------
-" !!! the leader key is always comma => ','
+" the leader key is always comma => ','
 let mapleader=','
 
 " quickly open my vimrc
