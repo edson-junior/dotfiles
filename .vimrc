@@ -18,7 +18,6 @@ set number                                " show line numbers
 set ruler
 set visualbell                            " remove annoying vim bell/beeping
 set mouse=a                               " enable scrolling
-set omnifunc=syntaxcomplete#Complete      " enable omni completion 
 set shortmess=atI                         " Don't show the intro message when starting vim
 set diffopt=filler                        " Add vertical spaces to keep right and left aligned
 set diffopt+=iwhite                       " Ignore whitespace changes (focus on code changes)
@@ -245,27 +244,6 @@ augroup ctrlp_config
   let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 augroup END
 
-" Silver Searcher
-augroup ag_config
-  autocmd!
-
-  if executable("ag")
-    " Note we extract the column as well as the file and line number
-    set grepprg=ag\ --nogroup\ --nocolor\ --column
-    set grepformat=%f:%l:%c%m
-
-    " Have the silver searcher ignore all the same things as wildignore
-    let b:ag_command = 'ag %s -i --nocolor --nogroup'
-
-    for i in split(&wildignore, ",")
-      let i = substitute(i, '\*/\(.*\)/\*', '\1', 'g')
-      let b:ag_command = b:ag_command . ' --ignore "' . substitute(i, '\*/\(.*\)/\*', '\1', 'g') . '"'
-    endfor
-
-    let b:ag_command = b:ag_command . ' --hidden -g ""'
-    let g:ctrlp_user_command = b:ag_command
-  endif
-augroup END
 
 " show hidden files in nerdtree
 let NERDTreeShowHidden=1
@@ -273,58 +251,6 @@ let NERDTreeShowHidden=1
 " vim-jsx configuration
 let g:jsx_ext_required = 0
 
-" Disable AutoComplPop.
-let g:acp_enableAtStartup = 0
-
-" enable neocomplete
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#auto_completion_start_length = 1
-let g:neocomplete#enable_smart_case = 1
-let g:neocomplete#sources#syntax#min_keyword_length = 2
-let g:neocomplete#sources#dictionary#dictionaries = {
-  \ 'default' : '',
-  \ 'vimshell' : $HOME.'/.vimshell_hist',
-  \ 'scheme' : $HOME.'/.gosh_completions'
-    \ }
-if !exists('g:neocomplete#keyword_patterns')
-  let g:neocomplete#keyword_patterns = {}
-endif
-
-if !exists('g:neocomplete#sources#omni#input_patterns')
-  let g:neocomplete#sources#omni#input_patterns = {}
-endif
-
-let g:neocomplete#keyword_patterns['default'] = '\h\w*'
-
-inoremap <expr><C-g>  neocomplete#undo_completion()
-inoremap <expr><C-l>  neocomplete#complete_common_string()
-inoremap <expr><C-h>  neocomplete#smart_close_popup()."\<C-h>"
-inoremap <expr><BS>   neocomplete#smart_close_popup()."\<C-h>"
-inoremap <expr><C-y>  neocomplete#close_popup()
-inoremap <expr><C-e>  neocomplete#cancel_popup()
-
-" Enable omni completion.
-augroup omnicomplete
-  autocmd!
-  autocmd FileType css,scss setlocal omnifunc=csscomplete#CompleteCSS
-  autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-  autocmd FileType javascript,typescript setlocal omnifunc=javascriptcomplete#CompleteJS
-  autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-  autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-augroup END
-
-" Enable snipMate compatibility feature.
-let g:neosnippet#enable_snipmate_compatibility = 1
-
-" Tell Neosnippet about the other snippets
-let g:neosnippet#snippets_directory='~/.vim/bundle/snipmate-mocha/snippets'
-
-" neocomplete snippets
-imap <C-k> <Plug>(neosnippet_expand_or_jump)
-smap <C-k> <Plug>(neosnippet_expand_or_jump)
-xmap <C-k> <Plug>(neosnippet_expand_target)
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
 " NERD Commenter
 augroup nerd_commenter
