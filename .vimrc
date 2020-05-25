@@ -18,7 +18,6 @@ set number                                " show line numbers
 set ruler
 set visualbell                            " remove annoying vim bell/beeping
 set mouse=a                               " enable scrolling
-" set shortmess=atI                         " Don't show the intro message when starting vim
 set diffopt=filler                        " Add vertical spaces to keep right and left aligned
 set diffopt+=iwhite                       " Ignore whitespace changes (focus on code changes)
 set clipboard=unnamed                     " Allow vim to copy stuff to clipboard
@@ -61,15 +60,6 @@ set expandtab " Expand tabs to spaces
 set esckeys " Allow cursor keys in insert mode
 
 
-" Folding ----------------------------------------
-set foldenable " Enable folding
-set foldcolumn=0 " Column to show folds
-set foldlevel=99 " Close all folds by default
-set foldmethod=syntax " Syntax are used to specify folds
-set foldminlines=0 " allow folding single lines
-set foldnestmax=5 " set max fold nesting level
-
-
 " visual settings ----------------------------------------
 set mousemodel=popup
 set guioptions=egmrti
@@ -106,21 +96,6 @@ nmap <leader><space> :nohlsearch<cr>
 " toggle nerdtree on control + n
 nmap <C-n> :NERDTreeToggle <cr>
 nmap <leader>m :NERDTreeFind<CR>
-
-" trigger emmet on ctrl+e, using <tab> ain't a great idea after all
-let g:user_emmet_install_global = 0
-autocmd FileType html,css,javascript,jsx,jsp,php EmmetInstall
-
-let g:user_emmet_leader_key = '<C-e>'
-let g:user_emmet_mode='inv'
-let g:user_emmet_settings = {
-\  'javascript.jsx' : {
-\      'extends' : 'jsx',
-\  },
-\  'jsp' : {
-\      'extends' : 'html',
-\  },
-\}
 
 " better split switching (ctrl-j, ctrl-k, ctrl-h, ctrl-l)
 map <C-j> <C-w>j
@@ -162,47 +137,6 @@ augroup buffer_control
   " Toggle split pane
   map <Leader>rr :vertical resize 800<CR>
 
-augroup END
-
-
-" commands ----------------------------------------
-" always source vimrc and plugins.vim on save
-augroup autosourcing
-  autocmd!
-  autocmd bufwritepost .vimrc source %
-  autocmd bufwritepost ~/work/dotfiles/.vim/plugins.vim source %
-augroup end
-
-
-" File Types ----------------------------------------
-" JavaScript
-augroup filetype_javascript
-  autocmd!
-  let g:javascript_conceal = 1
-augroup END
-
-" JSON
-augroup filetype_json
-  autocmd!
-  au BufRead,BufNewFile *.json,*.snap set ft=json syntax=javascript
-augroup END
-
-" Markdown
-augroup filetype_markdown
-  autocmd!
-  let g:markdown_fenced_languages = ['ruby', 'html', 'javascript', 'css', 'erb=eruby.html', 'bash=sh']
-augroup END
-
-" ZSH
-augroup filetype_zsh
-  autocmd!
-  au BufRead,BufNewFile .zsh_rc,.functions,.commonrc set ft=zsh
-augroup END
-
-" graphql
-augroup filetype_graphql
-  autocmd!
-  au BufRead,BufNewFile *.graphql,*.graphqls,*.gql,*.prisma set ft=graphql
 augroup END
 
 
