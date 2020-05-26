@@ -77,7 +77,7 @@ set spell spelllang=en_us,es_es,nl,pt_br,it
 set spell
 
 " better highlighting of spell checker
-hi SpellBad ctermfg=168 ctermbg=none cterm=underline
+" hi SpellBad ctermfg=168 ctermbg=none cterm=underline
 
 
 " mappings ----------------------------------------
