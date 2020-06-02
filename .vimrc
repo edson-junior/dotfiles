@@ -170,9 +170,6 @@ augroup END
 " show hidden files in nerdtree
 let NERDTreeShowHidden=1
 
-" vim-jsx configuration
-let g:jsx_ext_required = 0
-
 
 " NERD Commenter
 augroup nerd_commenter
