@@ -27,11 +27,10 @@ brew install grep
 # Install other useful binaries
 brew install aria2
 brew install git-standup
-brew install httpie
+# brew install httpie
 brew install mysql
 brew install mongodb
 brew install the_silver_searcher
-brew install git
 brew install node # This installs `npm` too using the recommended installation method
 brew install ffmpeg
 brew install zsh
@@ -39,7 +38,6 @@ brew install git-recent
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 brew install youtube-dl
-brew install heroku/brew/heroku
 brew install ttfautohint fontforge
 brew install unrar
 
