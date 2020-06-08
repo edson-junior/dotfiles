@@ -52,7 +52,9 @@ module.exports = {
     borderColor: '#333',
 
     // custom CSS to embed in the main window
-    css: '',
+    css: `
+      .term_fit.term_wrapper { overflow: inherit; }
+    `,
 
     // custom CSS to embed in the terminal window
     termCSS: '',
@@ -103,7 +105,7 @@ module.exports = {
     //
     // PowerShell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    shell: '',
+    shell: '/usr/local/bin/zsh',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
