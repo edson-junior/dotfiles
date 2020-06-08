@@ -4,6 +4,8 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/nljunie/.oh-my-zsh
 
+export PATH="/usr/local/sbin:$PATH"
+
 # Path to node
 export PATH="/usr/local/opt/node@12/bin:$PATH"
 
