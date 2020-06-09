@@ -40,6 +40,7 @@ brew install zsh-syntax-highlighting
 brew install youtube-dl
 brew install ttfautohint fontforge
 brew install unrar
+brew install tree
 
 # Remove outdated versions from the cellar
 brew cleanup
