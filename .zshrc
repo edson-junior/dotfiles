@@ -105,6 +105,8 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 #
 
 alias chrome='open -a "Google Chrome"'
+alias brave='open -a "Brave Browser"'
+alias spotify='open -a "Spotify"'
 # alias ls="exa --all --long --color=always --group-directories-first"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
