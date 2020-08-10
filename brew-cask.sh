@@ -15,7 +15,11 @@ brew tap homebrew/cask-versions
 # brew cask install enpass
 brew cask install docker 
 brew cask install docker-toolbox
+
+# 🙄
 brew cask install skype
+# brew cask install zoomus
+
 # virtualbox needs to be unblocked in:
 # - system preferences => Security & Privacy => General
 brew cask install virtualbox
