@@ -30,17 +30,12 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.formatOnSave": false,
   "explorer.confirmDelete": false,
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
   "java.semanticHighlighting.enabled": true,
   "workbench.iconTheme": "material-icon-theme",
   "sync.gist": "99fdca7a4abe4ddf8a5eb8b582f817ac",
   "sync.autoDownload": true,
   "sync.autoUpload": true,
   "sync.quietSync": true,
-  "sync.removeExtensions": false
+  "sync.removeExtensions": false,
+  "explorer.compactFolders": false
 }
