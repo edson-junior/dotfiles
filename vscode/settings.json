@@ -37,5 +37,6 @@
   "sync.autoUpload": true,
   "sync.quietSync": true,
   "sync.removeExtensions": false,
-  "explorer.compactFolders": false
+  "explorer.compactFolders": false,
+  "stylelint.packageManager": "yarn"
 }
