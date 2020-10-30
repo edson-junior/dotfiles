@@ -27,10 +27,8 @@
   },
   "gitlens.codeLens.enabled": false,
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.formatOnSave": false,
   "explorer.confirmDelete": false,
-  "java.semanticHighlighting.enabled": true,
   "workbench.iconTheme": "material-icon-theme",
   "sync.gist": "99fdca7a4abe4ddf8a5eb8b582f817ac",
   "sync.autoDownload": true,
@@ -38,5 +36,7 @@
   "sync.quietSync": true,
   "sync.removeExtensions": false,
   "explorer.compactFolders": false,
-  "stylelint.packageManager": "yarn"
+  "stylelint.packageManager": "yarn",
+  "workbench.colorTheme": "Dracula",
+  "extensions.ignoreRecommendations": false
 }
