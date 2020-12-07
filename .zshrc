@@ -21,7 +21,8 @@ export PATH="/usr/local/opt/git-recent/bin:$PATH"
 # Path to Ruby
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
-
+# Path to Java Home
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.

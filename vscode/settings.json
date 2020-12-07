@@ -37,6 +37,6 @@
   "sync.removeExtensions": false,
   "explorer.compactFolders": false,
   "stylelint.packageManager": "yarn",
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
   "extensions.ignoreRecommendations": false
 }
