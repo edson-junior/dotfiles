@@ -1,7 +1,7 @@
 # copy paste this file in bit by bit.
 # don't run it.
-  echo "do not run this script in one go. hit ctrl-c NOW"
-  read -n 1
+echo "do not run this script in one go. hit ctrl-c NOW"
+read -n 1
 
 ##############################################################################################################
 ### homebrew!
@@ -17,25 +17,16 @@
 ### end of homebrew
 ##############################################################################################################
 
-
-
 ##############################################################################################################
 ### install of common things
 ###
 
-
-# trash as the safe `rm` alternative
-# npm install --global trash-cli
 npm install --global gitignore
 npm install --global npm-check-updates
 npm install --global pure-prompt
 npm install --global n
 npm install --global npx
 npm install --global redoc-cli
-# npm install --global typescript
-sudo gem install mailcatcher
-
-
 
 ##############################################################################################################
 ### symlinks to link dotfiles into ~/

@@ -1,62 +1,35 @@
 #!/bin/bash
 
+# to maintain install ....
+#     brew update && brew upgrade brew-cask && brew cleanup && brew install cleanup`
 
-# to maintain cask ....
-#     brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
-
-# Install native apps
-
-# brew install caskroom/cask/brew-cask
-# brew tap caskroom/versions
+# --cask native apps
 brew tap homebrew/cask-versions
 
-# daily
-# brew cask install dropbox
-# brew cask install enpass
-brew cask install docker 
-brew cask install docker-toolbox
+brew install --cask the-unarchiver
+brew install --cask kap
+brew install --cask keepingyouawake
+brew install --cask qlcolorcode
+brew install --cask teamviewer
+brew install --cask authy
+brew install --cask appcleaner
 
-# 🙄
-brew cask install skype
-# brew cask install zoomus
-
-# virtualbox needs to be unblocked in:
-# - system preferences => Security & Privacy => General
-brew cask install virtualbox
-brew cask install the-unarchiver
-brew cask install 1password
-brew cask install kap
-brew cask install keepingyouawake
-brew cask install qlcolorcode
-brew cask install teamviewer
-brew cask install authy
-# In case Postman throws the error message: "Postman can’t be opened because Apple cannot check it for malicious software."
-# Run command: sudo spctl --master-disable
-# brew cask install postman
-# Then run this command afterwards: sudo spctl --master-enable
-brew cask install appcleaner
+# password managers
+brew install --cask 1password
+brew install --cask lastpass
 
 # dev
-# brew cask install iterm2
-brew cask install visual-studio-code
-brew cask install hyper
-# brew cask install sourcetree
-brew cask install adoptopenjdk8
-# brew cask install intellij-idea-ce
+brew install --cask visual-studio-code
+brew install --cask hyper
 
 # browsers
-brew cask install google-chrome
-brew cask install firefox
-brew cask install brave-browser
+brew install --cask google-chrome
+brew install --cask firefox
+brew install --cask brave-browser
 
 # players
-# brew cask install vlc
-brew cask install spotify
+brew install --cask spotify
 
 # fonts
 brew tap homebrew/cask-fonts
-brew cask install font-fira-code
-
-# messaging
-# brew cask install signal
-
+brew install --cask font-fira-code

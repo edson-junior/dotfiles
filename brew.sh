@@ -20,16 +20,14 @@ brew install gnu-sed
 brew install wget
 
 # Install more recent versions of some OS X tools
-brew install vim 
+brew install vim
 brew install nano
 brew install grep
 
 # Install other useful binaries
 brew install aria2
 brew install git-standup
-# brew install httpie
 brew install mysql@5.6
-brew install mongodb
 brew install the_silver_searcher
 brew install node # This installs `npm` too using the recommended installation method
 brew install ffmpeg
@@ -39,12 +37,10 @@ brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 brew install youtube-dl
 brew install ttfautohint fontforge
-brew install unrar
 brew install tree
 
 # Remove outdated versions from the cellar
 brew cleanup
 
 # experimental stuff
-brew install deno
-
+# brew install deno
