@@ -21,9 +21,6 @@ export PATH="/usr/local/opt/git-recent/bin:$PATH"
 # Path to Ruby
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
-# Path to Java Home
-export JAVA_HOME=$(/usr/libexec/java_home)
-
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/ThemesZSH_THEME="vim-atom-dark"
@@ -113,8 +110,7 @@ alias spotify='open -a "Spotify"'
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
-autoload -U promptinit
-promptinit
+autoload -U promptinit; promptinit
 prompt pure
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
