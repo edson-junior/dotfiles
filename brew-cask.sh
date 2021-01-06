@@ -9,7 +9,6 @@ brew tap homebrew/cask-versions
 brew install --cask the-unarchiver
 brew install --cask kap
 brew install --cask keepingyouawake
-brew install --cask qlcolorcode
 brew install --cask teamviewer
 brew install --cask authy
 brew install --cask appcleaner
