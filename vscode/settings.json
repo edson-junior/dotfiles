@@ -29,7 +29,7 @@
   "editor.suggestSelection": "first",
   "editor.formatOnSave": false,
   "explorer.confirmDelete": false,
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "eq-material-theme-icons-light",
   "sync.gist": "99fdca7a4abe4ddf8a5eb8b582f817ac",
   "sync.autoDownload": true,
   "sync.autoUpload": true,
