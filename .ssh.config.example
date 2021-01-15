@@ -2,13 +2,13 @@
 
 # Personal
 Host github.com
- HostName github.com
- IdentityFile ~/.ssh/id_rsa
+  HostName github.com
+  IdentityFile ~/.ssh/id_rsa
 
 # Work
 Host bitbucket.org
- HostName bitbucket.org
- IdentityFile ~/.ssh/id_rsa_work
+  HostName bitbucket.org
+  IdentityFile ~/.ssh/id_rsa_work
 
 Host *
   User git
