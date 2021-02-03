@@ -3,6 +3,7 @@
   email = email@email.com
 [core]
   editor = vim
+  excludesFile = ~/.gitignore
 [color]
   ui = auto
 [color "diff"]
