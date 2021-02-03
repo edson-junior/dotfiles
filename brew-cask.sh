@@ -20,6 +20,7 @@ brew install --cask lastpass
 # dev
 brew install --cask visual-studio-code
 brew install --cask hyper
+brew install --cask postman
 
 # browsers
 brew install --cask google-chrome
