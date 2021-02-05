@@ -24,6 +24,7 @@ brew install --cask postman
 
 # browsers
 brew install --cask google-chrome
+brew install --cask chromium
 brew install --cask firefox
 brew install --cask brave-browser
 
