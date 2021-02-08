@@ -19,7 +19,7 @@ brew install --cask lastpass
 
 # dev
 brew install --cask visual-studio-code
-brew install --cask hyper
+brew install --cask iterm2
 brew install --cask postman
 
 # browsers
