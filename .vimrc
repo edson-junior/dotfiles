@@ -12,11 +12,14 @@ so ~/.vim/plugins.vim                     " run plugins
 
 set t_Co=256
 syntax on
+colorscheme snazzy
+
 
 set backspace=indent,eol,start            " make backspace work normally
 set number                                " show line numbers
 set ruler
 set visualbell                            " remove annoying vim bell/beeping
+set belloff=all
 set mouse=a                               " enable scrolling
 set diffopt=filler                        " Add vertical spaces to keep right and left aligned
 set diffopt+=iwhite                       " Ignore whitespace changes (focus on code changes)
@@ -25,9 +28,6 @@ set noshowmode                            " Don't show the current mode (airline
 set viminfo=%,'9999,s512,n~/.vim/viminfo  " Restore buffer list, marks are remembered for 9999 files, registers up to 512Kb are remembered
 set undofile                              " Persistent Undo
 set colorcolumn=80                        " Set column marker
-
-" set color of column bar
-hi ColorColumn ctermbg=235
 
 
 " Local directories ----------------------------------------
