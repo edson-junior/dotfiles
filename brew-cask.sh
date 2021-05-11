@@ -34,3 +34,6 @@ brew install --cask spotify
 # fonts
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
+
+# messaging
+brew install --cask signal
