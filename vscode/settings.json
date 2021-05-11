@@ -38,5 +38,6 @@
   "explorer.compactFolders": false,
   "stylelint.packageManager": "yarn",
   "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
-  "extensions.ignoreRecommendations": false
+  "extensions.ignoreRecommendations": false,
+  "editor.linkedEditing": true
 }
