@@ -69,6 +69,7 @@ ZSH_THEME=""
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
+ZSH_DISABLE_COMPFIX="true"
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
