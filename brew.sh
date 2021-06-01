@@ -27,7 +27,6 @@ brew install grep
 # Install other useful binaries
 brew install aria2
 brew install git-standup
-brew install mysql@5.6
 brew install the_silver_searcher
 brew install node # This installs `npm` too using the recommended installation method
 brew install ffmpeg
