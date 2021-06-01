@@ -21,6 +21,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ln -sf ~/path/to/vscode/settings.json /Users/home/Library/Application\ Support/Code/User/settings.json
 ```
 
+### tip
+For enabling color scheme on iTerm, Type CMD+i (⌘+i)
+
 ## Feedback
 Any suggestions are [welcome](https://github.com/edson-junior/dotfiles/issues)!
 
