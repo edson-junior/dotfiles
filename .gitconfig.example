@@ -30,3 +30,5 @@
   untracked = red bold
 [fetch]
   prune = true
+[pull]
+	rebase = true
