@@ -37,3 +37,6 @@ brew install --cask font-fira-code
 
 # messaging
 brew install --cask signal
+
+# design
+brew install --cask figma
