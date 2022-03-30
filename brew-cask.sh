@@ -40,3 +40,6 @@ brew install --cask signal
 
 # design
 brew install --cask figma
+
+# cloud
+brew install --cask dropbox
