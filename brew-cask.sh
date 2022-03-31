@@ -9,7 +9,6 @@ brew tap homebrew/cask-versions
 brew install --cask the-unarchiver
 brew install --cask kap
 brew install --cask keepingyouawake
-brew install --cask teamviewer
 brew install --cask authy
 brew install --cask appcleaner
 
@@ -37,6 +36,7 @@ brew install --cask font-fira-code
 
 # messaging
 brew install --cask signal
+brew install --cask slack
 
 # design
 brew install --cask figma

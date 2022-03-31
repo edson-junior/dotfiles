@@ -1,10 +1,11 @@
 # Dotfiles
 
-![Example](example.png)
-
-If you want to use my dotfiles, first fork this repo, take a look at the code, then edit the files or remove the stuff that you won't be using. This repository is a collection of dotfiles that cater to my needs.
-
 ## How to install
+
+### install homebrew:
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
 - read and run parts of ```setup-machine.sh```
 - read and run ```symlink-setup.sh```
@@ -14,6 +15,13 @@ If you want to use my dotfiles, first fork this repo, take a look at the code, t
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
+
+### install useful zsh plugins
+- zsh-autosuggestions 
+- zsh-syntax-highlighting
+
+### install pure iterm theme
+- install pure
 
 ### Symlink settings.js:
 

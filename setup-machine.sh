@@ -21,12 +21,7 @@ read -n 1
 ### install of common things
 ###
 
-npm install --global gitignore
-npm install --global npm-check-updates
-npm install --global pure-prompt
-npm install --global n
-npm install --global npx
-npm install --global redoc-cli
+npm install -g gitignore pure-prompt npx
 
 ##############################################################################################################
 ### symlinks to link dotfiles into ~/
