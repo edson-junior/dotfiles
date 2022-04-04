@@ -26,6 +26,7 @@ brew install --cask google-chrome
 brew install --cask chromium
 brew install --cask firefox
 brew install --cask brave-browser
+brew install --cask opera
 
 # players
 brew install --cask spotify
