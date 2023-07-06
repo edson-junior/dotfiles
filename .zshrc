@@ -7,7 +7,8 @@ export ZSH=$HOME/.oh-my-zsh
 export PATH="/usr/local/sbin:$PATH"
 
 # Path to node
-export PATH="/usr/local/opt/node@12/bin:$PATH"
+# export PATH="/usr/local/opt/node@12/bin:$PATH"
+export PATH="/usr/local/opt/node@18/bin:$PATH"
 
 # Path to python
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
@@ -115,3 +116,7 @@ prompt pure
 
 # source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.oh-my-zsh/lib/key-bindings.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
