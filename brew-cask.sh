@@ -23,7 +23,11 @@ brew install --cask postman
 
 # browsers
 brew install --cask google-chrome
-brew install --cask chromium
+brew install --cask marmaduke-chromium
+# how to install marmaduke-chromium as in its read.me file
+# brew tap mtslzr/marmaduke-chromium
+# brew update
+# brew install marmaduke-chromium
 brew install --cask firefox
 brew install --cask brave-browser
 brew install --cask opera
