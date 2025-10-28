@@ -38,6 +38,8 @@ brew install youtube-dl
 brew install ttfautohint fontforge
 brew install tree
 brew install biome
+brew install postgresql@17
+brew link postgresql@17
 
 # Remove outdated versions from the cellar
 brew cleanup
