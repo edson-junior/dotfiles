@@ -49,6 +49,7 @@ brew install --cask figma
 
 # cloud
 brew install --cask dropbox
+brew install --cask docker
 
 #VPN
 brew install --cask tunnelbear
