@@ -127,3 +127,11 @@ export NVM_DIR="$HOME/.nvm"
 export PGDATA=/opt/homebrew/var/postgresql@17
 export PSQL_PAGER="less --chop-long-lines --header 1"
 export LANG=en_US.UTF-8
+
+# pnpm
+export PNPM_HOME="/Users/edson/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

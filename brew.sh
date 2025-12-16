@@ -40,6 +40,7 @@ brew install tree
 brew install biome
 brew install postgresql@17
 brew link postgresql@17
+brew install pnpm
 
 # Remove outdated versions from the cellar
 brew cleanup
